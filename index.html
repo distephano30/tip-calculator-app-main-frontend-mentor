@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <!-- the logo -->
+    <div class="logo">
+      <img src="images/logo.svg" alt="SPLITTER Logo" />
+    </div>
+
+    <!-- the calculator -->
+    <div class="calculator">
+      <div class="main-content">
+        <!-- the left part -->
+        <div class="input-content">
+          <!--the amount of input-->
+          <div class="amount-input">
+            <label for="amount">Bill</label> <br />
+            <input type="number" name="amount" id="amount" />
+          </div>
+
+          <!-- the tips section -->
+          <div class="tips-section">
+            <label for="tips" class="tip-label">Select Tip %</label>
+            <div class="tips-container">
+              <div class="tips tip-selected">5%</div>
+              <div class="tips">10%</div>
+              <div class="tips">15%</div>
+              <div class="tips">25%</div>
+              <div class="tips">50%</div>
+              <input
+                class="tipsCustom"
+                type="number"
+                name="custom"
+                id="input-tip"
+              />
+            </div>
+          </div>
+
+          <!-- Number people -->
+          <div class="people">
+            <div class="people_title_container">
+
+            <label for="" class="person-label">Number of People</label>
+            <span class="warning">Can't be zero</span>
+          </div>
+            <br />
+            <input type="number" name="number-people" id="number-people" />
+          </div>
+        </div>
+
+        <!--the right part -->
+        <div class="display-content">
+          <!-- per person -->
+          <div class="person-amount">
+            <h1 class="per-person">$0.00</h1>
+            <h2>
+              Tip Amount <br />
+              <span class="per">/ person</span>
+            </h2>
+          </div>
+
+          <!-- total -->
+          <div class="total">
+            <h1 class="total-amount">$0.00</h1>
+            <h2>
+              Total <br />
+              <span class="per">/ person</span>
+            </h2>
+          </div>
+
+          <!-- the reset button -->
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
